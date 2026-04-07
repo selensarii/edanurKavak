@@ -43,6 +43,7 @@ export default function Navbar() {
             ))}
             <a
               href="#contact"
+              onClick={(e) => { e.preventDefault(); fastScrollTo("#contact"); }}
               className="bg-primary text-accent px-6 py-2.5 rounded-full hover:bg-primary/90 transition-all font-medium shadow-sm hover:shadow-md"
             >
               Randevu Al
@@ -88,7 +89,7 @@ export default function Navbar() {
               <div className="pt-4">
                 <a
                   href="#contact"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => { e.preventDefault(); fastScrollTo("#contact"); setIsOpen(false); }}
                   className="block w-full text-center bg-primary text-accent px-6 py-3 rounded-full hover:bg-primary/90 transition-all font-medium"
                 >
                   Randevu Al

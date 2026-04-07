@@ -12,12 +12,12 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-primary opacity-20 blur-3xl -z-10" />
 
       <div className="max-w-7xl mx-auto w-full py-12 lg:py-20 flex items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8 items-center w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="space-y-5 sm:space-y-8 text-center lg:text-left items-center lg:items-start flex flex-col"
+            className="space-y-5 sm:space-y-8 text-center md:text-left items-center md:items-start flex flex-col"
           >
             <div className="inline-block px-4 py-1.5 rounded-full bg-secondary/50 text-accent text-sm font-medium border border-primary/20">
               Psikolog Edanur Kavak
@@ -29,7 +29,7 @@ export default function Hero() {
             <p className="text-sm sm:text-lg text-body max-w-lg leading-relaxed text-justify sm:text-justify">
               Bilişsel Davranışçı Terapi (BDT) ve güncel bilimsel yaklaşımlar doğrultusunda; yetişkin, ergen ve çocuk danışanların psikolojik dayanıklılığını artırmayı ve yaşam kalitesini iyileştirmeyi hedefliyoruz. Etik, güvenli ve yapılandırılmış bir klinik destek süreci.
             </p>
-            <div className="pt-4 flex flex-col sm:flex-row gap-4 items-center lg:items-start w-full sm:w-auto">
+            <div className="pt-4 flex flex-col sm:flex-row gap-4 items-center md:items-start w-full sm:w-auto">
               <a
                 href="#contact"
                 onClick={(e) => { e.preventDefault(); fastScrollTo("#contact"); }}
@@ -51,7 +51,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="relative mx-auto lg:ml-auto lg:mr-0 max-w-[200px] sm:max-w-sm w-full"
+            className="relative mx-auto md:ml-auto md:mr-0 max-w-[200px] sm:max-w-xs md:max-w-sm w-full"
           >
             <div className="absolute inset-0 bg-secondary rounded-[3rem] rotate-6 transform transition-transform hover:rotate-3 duration-500 ease-out" />
             <div className="relative aspect-[3/4] w-full rounded-[2rem] sm:rounded-[3rem] overflow-hidden border-4 sm:border-8 border-background shadow-2xl bg-secondary/20">

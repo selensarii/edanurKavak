@@ -25,7 +25,7 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-stretch mt-8">
+          <div className="flex flex-col-reverse md:flex-row gap-8 items-center md:items-stretch mt-8">
             {/* Text Content */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -54,7 +54,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="w-full lg:w-[320px] shrink-0"
+              className="w-full md:w-[320px] shrink-0"
             >
               <div className="relative h-full min-h-[350px] lg:min-h-0 rounded-[2rem] overflow-hidden border-4 border-white shadow-xl group bg-secondary/10">
                 <Image
